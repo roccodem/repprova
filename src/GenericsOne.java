@@ -5,6 +5,15 @@ import java.util.List;
 
 public class GenericsOne {
 
+	public static void addElem(List<? super Integer> list ) {
+		
+		for (int i = 0; i < 10; i++) {
+			list.add(i);
+		}
+
+	}
+
+	// TODO modificare metodo
 	public static double sumOfList(List<? extends Number> list ) {
 		double d=0;
 		for (Number n : list) {
@@ -30,6 +39,11 @@ public class GenericsOne {
 
 		List<Double> dd = Arrays.asList(1.0,2.2,3.5);
 		System.out.println("Somma di Double:"+ sumOfList(dd));
+
+		List<Integer> ls = new ArrayList<>();
+		addElem(ls);
+		//List<Double> ld = new ArrayList<>();
+		//addElem(ld);
 	}
 
 }
