@@ -16,6 +16,7 @@ public class GenericsOne {
 	// TODO modificare metodo
 	public static double sumOfList(List<? extends Number> list ) {
 		double d=0;
+		// commento branch
 		for (Number n : list) {
 			d += n.doubleValue();
 		}
