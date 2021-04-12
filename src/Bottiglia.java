@@ -5,6 +5,7 @@ public class Bottiglia<T> {
 	/**
 	 * 
 	 * @param t
+	 * @category my category
 	 */
 	public Bottiglia(T t) {
 		this.contenuto = t;
